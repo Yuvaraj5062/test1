@@ -1,0 +1,18 @@
+@media only screen and(min-width:768px) {
+  .button {
+    font-size: var(--medium);
+    color: var(--primary-medium);
+    border: none;
+    cursor: pointer;
+    font-weight: var(--font-bold);
+    border-radius: 9px;
+    min-width: 100px;
+    // display: flex;
+    // flex-direction: row;
+    .spinner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--black2);
+  z-index: 15;
+  overflow-y: auto;
+}
+
+@media only screen and(min-width:768px) {
+}

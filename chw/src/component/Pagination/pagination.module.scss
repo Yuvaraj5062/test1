@@ -1,0 +1,93 @@
+.paginationContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+    background: var(--white-10);
+    
+    padding: 12px 20px;
+    // flex-wrap: wrap;
+   
+    .pageRange{
+        color: var(--secondary-blur);
+        font-size: var(--XXXXSmall);
+        font-weight: var(--font-medium);
+    }
+    .paginationPagesContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        // border: 1px solid var(--green2);
+        justify-content: center;
+        .previousBtn{
+            display: flex;
+            flex-direction: row;
+            width: 124px;
+            color: var(--green2);
+            padding: 9px 18px 6px 5px;
+            border: 1px solid var(--green2);
+            background: var(--white);
+            justify-content: center;
+            border-radius:unset;
+        
+        }
+        .nextBtn{
+            display: flex;
+            flex-direction: row-reverse;
+            color: var(--green2);
+            width: 124px;
+            padding: 9px 5px 6px 0px;
+            background: var(--white);
+            border: 1px solid var(--green2);
+            justify-content: center;
+            border-radius:unset;
+        
+        }
+        .titlePrevious{
+            color: var(--green2);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            margin-left:10px;
+        }
+        .titleNext{
+            color: var(--green2);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            margin-right:10px;
+        }
+        .paginationScroll{
+            max-width: 170px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            border-top: 1px solid var(--green2);
+            border-bottom: 1px solid var(--green2);
+            &::-webkit-scrollbar {
+                display: none;
+              }
+              -ms-overflow-style: none; 
+              scrollbar-width: none;
+              padding: 5px 0px;
+            .pageNumber{
+                color: var(--green2);
+                padding: 7px 15px;
+                cursor: pointer;
+                background:var(--grey);
+            }
+            .activePage{
+                padding: 7px 15px;
+                cursor: pointer;
+                background-color: var(--green2);
+                color: var(--white);
+            }
+        }
+    }
+   }
+@media only screen and (min-width: 768px) { 
+    .paginationContainer{
+        .paginationPagesContainer{
+            width: unset;
+        }
+    }
+}

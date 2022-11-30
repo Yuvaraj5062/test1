@@ -1,0 +1,39 @@
+@mixin addPatientCardHeader($color) {
+    margin-right: 10px;
+    background: var($color);
+}
+
+
+
+
+.specialityContainer {
+    width: 383px;
+    height: 250px;
+    background: var(--white);
+    border-radius: 20px;
+
+    .specialityBody {
+        display: flex;
+        flex-direction: column;
+        margin: 22px 0px 10px 22px;
+
+        .specialityRow {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+
+            .circle1 {
+                @include addPatientCardHeader(--primary-light);
+            }
+
+            .circle2 {
+                @include addPatientCardHeader(--denger-light);
+            }
+
+            .circle3 {
+                @include addPatientCardHeader(--blue);
+            }
+
+        }
+    }
+}

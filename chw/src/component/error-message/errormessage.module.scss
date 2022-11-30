@@ -1,0 +1,9 @@
+.errorMessageContainer{
+    text-align: center;
+    margin-top: 20px;
+    .errorMessage{
+        color: var(--denger-dark);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+    }
+}

@@ -1,0 +1,63 @@
+.datePicker {
+  background: var(--white1);
+  // padding-left: 7px;
+
+  //  text-align: center;
+  input {
+    font-size: var(--XXSmall);
+    font-weight: var(--font-medium);
+    // padding: 10px 0px 10px 20px;
+    background: var(--white1);
+    border: none;
+    //color: var(--secondary-blur);
+    padding: 12px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.datePick {
+  color: var(--blue1);
+}
+
+.datePickerContainer {
+  margin: 10;
+  display: "flex" !important;
+  flex-direction: row;
+  // justify-content: center;
+
+  .dropdownArrow {
+    padding: 3px 30px 3px 30px;
+    border: 1px solid var(--secondary-blur);
+    position: relative;
+
+    .expandIcon {
+      position: absolute;
+      top: 7px;
+      right: 8px;
+    }
+
+    .dropdown {
+      position: absolute;
+      padding-top: 5px;
+      max-height: 200px;
+      width: 100%;
+      background: var(--grey);
+      top: 27px;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      cursor: pointer;
+      .options {
+        color: var(--black);
+      }
+    }
+  }
+
+  .selectDropdown {
+    max-height: 50px;
+  }
+}

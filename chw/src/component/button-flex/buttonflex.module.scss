@@ -1,0 +1,9 @@
+.buttonFlexContainer{
+    display: flex;
+    flex-direction: row;
+    padding:22px 22px 22px 22px;
+    .button{
+        margin-right: 10px;
+        border: none;
+    }
+}

@@ -1,0 +1,76 @@
+@media only screen and (min-width: 768px) {
+    .profileContainer {
+        width: 384px;
+        height: 349px;
+        background: linear-gradient(to top, var(--white) 70%, var(--primary) 0%);
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 20px;
+        align-items: center;
+        flex-direction: column;
+
+        .ProfileContant {
+            display: flex;
+            flex-direction: column;
+
+            .profileImage {
+                background: var(--white);
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            .profileName {
+                font-weight: var(--font-bold);
+                font-size: var(--XSmall);
+                color: var(--black);
+            }
+
+            .profilesubTitle {
+                font-weight: var(--font-normal);
+                font-size: var(--XXXXSmall);
+                color: var(--secondary-blur2);
+            }
+        }
+
+        .profileDiscription {
+            margin-top: 18px;
+            text-align: center;
+            font-weight: var(--font-normal);
+            font-size: var(--XXSmall);
+            color: var(--secondary-blur2);
+        }
+
+        .outerDividerClass {
+            width: 100%;
+            margin-top: 11px
+        }
+
+        .profileFooter {
+            display: flex;
+            flex-direction: row;
+            margin-top: 17px;
+            margin-bottom: 19px;
+
+            .title {
+                font-weight: var(--font-semibold);
+                font-size: var(--XXLarge);
+                color: var(--black);
+            }
+
+            .subTitle {
+                font-weight: var(--font-normal);
+                font-size: var(--XXXXSmall);
+                color: var(--secondary-blur2);
+            }
+
+            .dividerClass {
+                width: 1px;
+                height: 100%;
+                margin-left: 32px;
+                margin-right: 32px;
+            }
+        }
+    }
+}

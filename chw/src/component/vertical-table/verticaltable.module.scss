@@ -1,0 +1,16 @@
+.tableContainer{
+    .table{
+        width:100%;
+        .tableHeader{
+            text-align: start;
+            color: var(--black);
+            font-size: var(--XXSmall);
+            font-weight: var(--font-normal);
+        }
+        .tablerow{
+            color: var(--secondary-blur);
+            font-size: var(--XXSmallXSmall);
+            font-weight: var(--font-normal);
+        }
+    }
+}

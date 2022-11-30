@@ -1,0 +1,154 @@
+.paginationContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 100%;
+  background: var(--white-10);
+  //   display: none;
+
+  padding: 0px 20px 20px 20px;
+   flex-wrap: wrap;
+
+  .pageRange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .pagenationText {
+      color: var(--secondary-blur);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      margin-left: 20px;
+    }
+
+    .pageDropdown {
+      width: 60px;
+      height: 30px;
+      border: 1px solid var(--secondary-medium-blur);
+      border-radius: 2px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .pageLimit {
+        color: var(--secondary-blur);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        margin-left: 5px;
+      }
+
+      .icon {
+        transform: rotate(-95deg);
+        margin-left: 25px;
+        cursor: pointer;
+      }
+
+      .dropdownContent {
+        position: absolute;
+        width: 54px;
+        // height: 54px;
+        background: var(--white);
+        border: 1px solid var(--secondary-medium-blur);
+        top: 32px;
+        // padding: 10px;
+        padding-left: 6px;
+        font-size: var(--XXSmall);
+        font-weight: var(--font-medium);
+        color: var(--secondary-blur);
+        cursor: pointer;
+
+        .dropdownItem {
+          &:hover {
+            background: var(--grey);
+          }
+        }
+      }
+    }
+  }
+
+  .paginationPagesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    // border: 1px solid var(--green2);
+    justify-content: center;
+
+    .previousBtn {
+      display: flex;
+      flex-direction: row;
+      width: 95px;
+      color: var(--green2);
+      padding: 9px 18px 6px 5px;
+      border: 1px solid var(--green2);
+      background: var(--white);
+      justify-content: center;
+      border-radius: unset;
+    }
+
+    .nextBtn {
+      display: flex;
+      flex-direction: row-reverse;
+      color: var(--green2);
+      width: 95px;
+      padding: 9px 5px 6px 0px;
+      background: var(--white);
+      border: 1px solid var(--green2);
+      justify-content: center;
+      border-radius: unset;
+    }
+
+    .titlePrevious {
+      color: var(--green2);
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-medium);
+      margin-left: 10px;
+    }
+
+    .titleNext {
+      color: var(--green2);
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-medium);
+      margin-right: 10px;
+    }
+
+    .paginationScroll {
+      max-width: 170px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border-top: 1px solid var(--green2);
+      border-bottom: 1px solid var(--green2);
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding: 5px 0px;
+
+      .pageNumber {
+        color: var(--green2);
+        padding: 7px 15px;
+        cursor: pointer;
+        background: var(--grey);
+      }
+
+      .activePage {
+        padding: 7px 15px;
+        cursor: pointer;
+        background-color: var(--green2);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .paginationContainer {
+   // margin-top: 41%;
+    .paginationPagesContainer {
+      width: unset;
+    }
+  }
+}

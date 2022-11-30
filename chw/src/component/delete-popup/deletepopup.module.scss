@@ -1,0 +1,92 @@
+.deleteContainer {
+  width: 99%;
+  background: var(--white);
+  border-radius: 20px;
+  .titleContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 22px 0px 22px;
+      color:var(--thursary-dark);
+      font-size: var(--XSmall);
+       font-weight: var(--font-medium);
+      .closeIcon {
+        cursor: pointer;
+      }
+    }
+    .divider {
+      // border: 0.5px solid var(--secondary-medium-blur1);
+      margin: 19px 0px ;
+    }
+    .confirmationMessage{
+      padding: 0px 22px;  
+      display: inline-block;
+      color:var(--thursary-dark);
+      font-size: var(--XSmall);
+      font-weight: var(--font-bold);
+    }
+    .cancleButton{
+      background: var(--grey1);
+      color:var(--thursary-dark);
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-medium);
+      border-radius: 6px;
+      padding: 7px 11px;
+      cursor: pointer;
+    }
+    .deleteButton{
+      background: var(--denger);
+      color:var(--denger-dark);
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-medium);
+      border-radius: 6px;
+      padding: 7px 11px;
+      cursor: pointer;
+    }
+}
+@media only screen and(min-width:768px) {
+    
+      .deleteContainer {
+        width: 600px;
+        background: var(--white);
+        border-radius: 20px;
+        .titleContainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 22px 22px 0px 22px;
+            color:var(--thursary-dark);
+            font-size: var(--XSmall);
+             font-weight: var(--font-medium);
+            .closeIcon {
+              cursor: pointer;
+            }
+          }
+          .divider {
+            // border: 0.5px solid var(--secondary-medium-blur1);
+            margin: 19px 0px ;
+          }
+          .confirmationMessage{
+            padding: 0px 22px;  
+            color:var(--thursary-dark);
+            font-size: var(--XSmall);
+            font-weight: var(--font-bold);
+          }
+          .cancleButton{
+            background: var(--grey1);
+            color:var(--thursary-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            border-radius: 6px;
+            padding: 7px 11px;
+            cursor: pointer;
+          }
+          .deleteButton{
+            background: var(--denger);
+            color:var(--denger-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            border-radius: 6px;
+            padding: 7px 11px;
+            cursor: pointer;
+          }
+      }
+    }

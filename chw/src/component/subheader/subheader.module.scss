@@ -1,0 +1,27 @@
+.subHeaderMainContainer {
+  display: flex;
+  background: var(--white);
+  border-radius: 12px;
+  margin: 20px 20px 0px 20px;
+  .title {
+    color: var(--thursary-dark);
+    font-size: var(--XSmall);
+    font-weight: var(--font-medium);
+    padding: 10px 0px 10px 30px;
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .subHeaderMainContainer {
+    // display: flex;
+    // background: var(--white);
+    border-radius: 20px;
+    margin: 22px 0px 0px 0px;
+    .title {
+      color: var(--thursary-dark);
+      // font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+      padding: 9px 0px 10px 16px;
+    }
+  }
+}

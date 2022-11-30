@@ -1,0 +1,55 @@
+@media only screen and(min-width:768px) {
+  .problemIdentificationContainer {
+    // width: 386px;
+    // height: 450px;
+    // display: flex;
+    // justify-content: space-between;
+    padding-bottom: 68px;
+    background: var(--white);
+    border-radius: 20px;
+    margin-top: 22px;
+    .title {
+      padding: 22px 0px 0px 22px;
+      color: var(--thursary-dark);
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+    }
+    .divider {
+      margin-top: 16px;
+    }
+    .buttonInput {
+      color: var(--secondary-blur);
+      border: none;
+      padding-left: 13px;
+      width: 95%;
+
+      &::placeholder {
+        color: var(--secondary-blur);
+        font-size: var(--XXSmallXSmall);
+        font-weight: var(--font-normal);
+        margin: 5px;
+      }
+    }
+    .noteTitle {
+      padding: 16px 0px 0px 22px;
+      color: var(--thursary-dark);
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+    }
+    .input1 {
+      width: 83%;
+      flex: 1;
+      border: 1px solid var(--secondary-blur);
+      border-radius: 8px;
+      margin: 5px 0px 0px 27px;
+      padding: 9px 0px 51px 0px;
+    }
+    .mobileNumberInputField {
+      //   margin-top: 22px;
+      padding: 16px 0px 0px 22px;
+      color: var(--thursary-dark);
+      font-size: var(--XSmall);
+      font-weight: var(--font-normal);
+    }
+  }
+}

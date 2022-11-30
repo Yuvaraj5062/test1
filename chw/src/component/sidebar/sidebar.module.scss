@@ -1,0 +1,128 @@
+@mixin sideBarActiveDeactiveChild($color) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 10px;
+
+  .childLinkName {
+    color: $color;
+    font-weight: var(--font-medium);
+    font-size: var(--XXSmall);
+    margin-left: 10px;
+  }
+}
+
+@mixin sideBarActiveDeactive($bgcolor, $padding) {
+  .sideBarLink {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: $padding;
+    cursor: pointer;
+    justify-content: space-between;
+
+    .linkIconTitle {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .linkName {
+        color: var($bgcolor);
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        margin-left: 10px;
+      }
+    }
+
+    .icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  .sideBarActiveChildren {
+    background-color: var(--green1);
+    &:last-of-type {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    @include sideBarActiveDeactiveChild(var(--blue-dark));
+  }
+
+  .sideBarDeactiveChildren {
+    @include sideBarActiveDeactiveChild(var(--secondary-dark));
+  }
+}
+
+.sidebarContainer {
+  background-color: var(--blue-dark);
+  width: 340px;
+  height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  .sidebarHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 8px;
+    margin-right: 29px;
+    .logo1 {
+      width: 200px;
+      height: 90px;
+    }
+  }
+
+  .deactiveLinkBox {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 17px;
+    display: flex;
+    padding: 10px;
+    background-color: var(--blue-dark);
+    flex-direction: column;
+    width: 227px;
+    @include sideBarActiveDeactive(--white, unset);
+  }
+
+  .activeLinkBox {
+    margin: 17px 10px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--white);
+    width: 247px;
+    @include sideBarActiveDeactive(--blue-dark, 10px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebarContainer {
+    background-color: var(--blue-dark);
+    width: 195px;
+    //     height: 100%;
+    //     .sidebarHeader{
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: center;
+    //         padding-top: 20px;
+    //         margin-left: 8px;
+
+    // }
+
+    .deactiveLinkBox {
+      width: unset;
+      @include sideBarActiveDeactive(--white, unset);
+    }
+
+    .activeLinkBox {
+      width: unset;
+    }
+  }
+}

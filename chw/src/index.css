@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100% !important;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
+html {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+:root {
+  --XXXXXSmall: 10px;
+  --XXXXSmall: 12px;
+  --XXXSmall: 13px;
+  --XXSmall: 14px;
+  --XSmall: 16px;
+  --small: 18px;
+  --medium: 20px;
+  --large: 22px;
+  --XLarge: 24px;
+  --XXLarge: 25px;
+  --XXXLarge: 28px;
+  --XXXXLarge: 30px;
+  --max-size: 42px;
+  --XXXXXLarge: 50px;
+  --MSmall: 15px;
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+  --primary: #099baa;
+  --primary-light: #ceebee;
+  --primary-dark: #2bbeb2;
+  --primary-medium-light: #dffcff;
+  --primary-medium: #d6ebef;
+  --primary-medium1: #089eae;
+  --primary-medium2: #3bb6c4;
+  --secondary: #eff7f9;
+  --secondary-dark: #767d75;
+  --secondary-blur: #8f9493;
+  --secondary-blur2: #a09e9e;
+  --secondary-blur3: #e9eef1;
+  --secondary-medium: #f5f5f5;
+  --secondary-medium-light: #e4e0e0;
+  --secondary-medium-extrablur: #d9d9d9;
+  --secondary-light: #5b5b5b;
+  --secondary-light-blur: #8e9392;
+  --secondary-medium-blur: #eeeeee;
+  --secondary-medium-blur1: #c3dade;
+  --secondary-medium-light-blur: #3bb6c4;
+  --thursary: #777d74;
+  --thursary-light: #5b5b5b;
+  --thursary-dark: #3f414d;
+  --white: #ffffff;
+  --black: #000000;
+  --black1: #030303;
+  --black2: #030303cc;
+  --denger: #fcecec;
+  --denger-light: #fae9dd;
+  --denger-dark: #e6467d;
+  --red1:#F62F2F;
+
+  --blue: #e5faff;
+  --blue-dark: #216797;
+  --blue-light: #daeaf4;
+  --blue2: #eaf4fb;
+  --blue3: #dae9f2;
+  --grey: #f3f2f2;
+  --grey1: #e1e1e1;
+  --green: #2bbeb2;
+  --green1: #d0e3f0;
+  --green2: #089bab;
+}
+
+* {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins";
+}

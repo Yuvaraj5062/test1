@@ -1,0 +1,54 @@
+@media only screen and(min-width:768px) {
+  .mainContainer {
+    width: 380px;
+    border-radius: 20px;
+    background: var(--white);
+    .titleContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 22px 0px 22px;
+      .closeIcon {
+        cursor: pointer;
+      }
+    }
+    .divider {
+      margin: 19px 0px 0px 0px;
+      background: var(--secondary-medium-blur1);
+      border: none;
+    }
+    .popupData {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0px 70px 0px;
+      .successTitle {
+        color: var(--primary-dark);
+        font-weight: var(--font-bold);
+        font-size: var(--XXLarge);
+        padding-top: 12px;
+      }
+      .errorTitle{
+        color: var(--red1);
+        font-weight: var(--font-bold);
+        font-size: var(--XXLarge);
+        padding-top: 12px;
+      }
+      .successMessage {
+        color: var(--thursary-dark);
+        font-weight: var(--font-bold);
+        font-size: var(--XSmall);
+      }
+     
+      .okButton {
+        background: var(--primary-dark);
+        color: var(--white);
+        font-weight: var(--font-medium);
+        font-size: var(--XXXXSmall);
+        min-width: 0px;
+        padding: 7px 40px;
+        margin-top: 21px;
+      }
+    }
+  }
+}

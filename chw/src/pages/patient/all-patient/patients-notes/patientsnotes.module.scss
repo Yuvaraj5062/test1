@@ -1,0 +1,34 @@
+.patientNotesContainer {
+    width: 383px;
+    height: 404px;
+    background: var(--white);
+    border-radius: 20px;
+
+    .dividerClass {
+        margin-bottom: 22px;
+    }
+
+    .ptientsNotesBody {
+        margin: 0px 22px 12px 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .openButton {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            border-radius: 6px;
+        }
+        .closeButton {
+            background: var(--denger);
+            color: var(--denger-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            border-radius: 6px;
+        }
+    }
+
+}

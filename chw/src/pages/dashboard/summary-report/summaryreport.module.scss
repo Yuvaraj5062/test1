@@ -1,0 +1,164 @@
+.summaryReportContainer {
+  .loader {
+    width: 20px;
+    height: 20px;
+    margin: 20px auto;
+    border: 3px solid var(--blue-dark);
+    border-radius: 50%;
+    border-top: 3px solid var(--blue-light);
+  }
+
+  .mainContainer {
+    padding: 22px 22px 0px 0px;
+    margin-left: 22px;
+    display: flex;
+    flex-direction: row;
+    // padding:22px 22px 22px 22px;
+    &:last-of-type {
+      margin-top: auto;
+      margin-bottom: 0px;
+    }
+    .backButton {
+      width: auto;
+      margin-top: 20px;
+      margin-right: 10px;
+      border: none;
+
+      background: var(--grey1);
+      color: var(--thursary-dark);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      border-radius: 6px;
+      padding: 7px 11px;
+      cursor: pointer;
+    }
+
+    .encouterButton {
+      width: auto;
+      margin-top: 20px;
+      margin-right: 10px;
+      border: none;
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-medium);
+      border-radius: 6px;
+      padding: 7px 11px;
+      cursor: pointer;
+    }
+  }
+
+  .summaryReportCardContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 10px 20px 0px 20px;
+    .tablehead {
+      height: 0px;
+      padding: 0px 10px;
+    }
+    .tableRow {
+      height: 0px;
+      padding: 3px 10px;
+      max-width: 50px;
+      overflow-wrap: break-word;
+      white-space: unset !important;
+    }
+    .tableContainer {
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+    .tableRow {
+      padding: 0px 0px;
+      max-width: 50px;
+      overflow-wrap: break-word;
+      white-space: unset !important;
+    }
+  }
+
+  .summaryReportCardMedication {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 10px 20px 0px 20px;
+    .tablehead {
+      height: 0px;
+      padding: 0px 10px;
+    }
+    .tableRow {
+      height: 0px;
+      padding: 3px 10px;
+      max-width: 50px;
+      overflow-wrap: break-word;
+      white-space: unset !important;
+    }
+    .tableContainer {
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+    .tableRow {
+      padding: 0px 0px;
+      max-width: 50px;
+      overflow-wrap: break-word;
+      white-space: unset !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .summaryReportContainer {
+    .summaryReportCardContainer {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      margin: 0px 0px 0px 0px;
+      .customClass {
+        width: auto;
+        margin-top: 20px;
+      }
+    }
+    .mainContainer {
+      margin-left: 0px;
+    }
+
+    .summaryReportCardMedication {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      margin: 0px 0px 0px 0px;
+      .customClass {
+        width: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .summaryReportContainer {
+    .summaryReportCardContainer {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      margin: 0px 0px 0px 0px;
+      .customClass {
+        width: auto;
+        margin-top: 20px;
+      }
+    }
+    .mainContainer {
+      margin-left: 0px;
+    }
+    .summaryReportCardMedication {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      margin: 0px 0px 0px 0px;
+      .customClass {
+        width: auto;
+        margin-top: 20px;
+      }
+      .tableRow {
+        height: 0px;
+        padding: 3px 10px;
+        max-width: 50px;
+        overflow-wrap: break-word;
+        white-space: unset !important;
+      }
+    }
+  }
+}

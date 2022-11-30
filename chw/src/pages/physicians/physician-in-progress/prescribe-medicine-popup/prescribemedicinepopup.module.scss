@@ -1,0 +1,236 @@
+.container {
+  .mainContainer {
+    width: 384px;
+    background: var(--primary-medium);
+    border-radius: 20px;
+    min-height: 132px;
+    .titleContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 22px 0px 22px;
+      .closeIcon {
+        cursor: pointer;
+      }
+    }
+    .divider {
+      background: var(--secondary-medium-extrablur);
+      border: none;
+      margin: 19px 0px 0px 0px;
+    }
+
+    .cardData {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      padding: 0px 0px 22px 0px;
+      height: 120px;
+      min-height: 400px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        // display: none;
+      }
+      // -ms-overflow-style: none; /* IE and Edge */
+      // scrollbar-width: none;
+      .card {
+        display: flex;
+        flex-direction: column;
+        // width: 168px;
+        height: 200px;
+        background: var(--white);
+        border-radius: 12px;
+        padding: 13px 0px 16px 0px;
+        margin: 20px 0px 0px 26px;
+
+        .morninngContainer {
+          display: flex;
+          align-items: center;
+          margin: 12px 0px 0px 19px;
+          // height: 20px;
+          // min-height: 50px;
+          // overflow-y: auto;
+          .background {
+            background: var(--thursary-dark);
+
+            border-radius: 4px;
+            padding: 4px;
+          }
+          .morning {
+            margin-left: 6px;
+            color: var(--thursary-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+          }
+          .title {
+            // margin: 13px 0px 0px 19px;
+            margin-left: 15px;
+            color: var(--thursary-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+          }
+        }
+        .divider {
+          // margin: 15px 19px 0px 19px;
+          background: var(--secondary-medium-extrablur);
+          border: none;
+          &:last-of-type {
+            margin-top: auto;
+            margin-bottom: 0px;
+          }
+        }
+
+        .buttoncontainer {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          &:last-of-type {
+            margin-top: auto;
+            margin-bottom: 0px;
+          }
+          .editButton {
+            width: 47px;
+            height: 32px;
+            min-width: 0px;
+            border: none;
+            border-radius: 6px;
+            background: var(--primary-dark);
+            color: var(--white);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            margin-left: 19px;
+          }
+          .deleteButton {
+            width: 63px;
+            height: 32px;
+            border: none;
+            min-width: 0px;
+            border-radius: 6px;
+            background: var(--denger);
+            color: var(--denger-dark);
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-medium);
+            margin-right: 19px;
+            margin-left: 10px;
+          }
+        }
+        .title {
+          // margin: 13px 0px 0px 19px;
+          margin-left: 15px;
+          color: var(--thursary-dark);
+          font-size: var(--XSmall);
+          font-weight: var(--font-bold);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .container {
+    .mainContainer {
+      width: 600px;
+      background: var(--primary-medium);
+      border-radius: 20px;
+
+      .titleContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 22px 0px 22px;
+        .closeIcon {
+          cursor: pointer;
+        }
+      }
+      .divider {
+        // border: 0.5px solid var(--secondary-medium-blur1);
+        margin: 19px 0px 0px 0px;
+        background: var(--secondary-medium-blur1);
+        border: none;
+      }
+      .cardData {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 0px 22px 0px;
+        height: 534px;
+
+        min-height: 466px;
+        .card {
+          display: flex;
+          flex-direction: column;
+          background: var(--white);
+          border-radius: 12px;
+          // margin-left: 26px;
+          margin: 20px 14px 0px 26px;
+          padding: 13px 0px 16px 0px;
+          height: 217px;
+          .scrollContainer {
+            // height: 66px;
+            max-height: 70px;
+            overflow-y: auto;
+            .mainData {
+              display: flex;
+              flex-direction: row;
+
+              .background {
+                background: var(--thursary-dark);
+                border-radius: 4px;
+                padding: 4px;
+              }
+              .morning {
+                margin-left: 6px;
+                color: var(--thursary-dark);
+                font-size: var(--XXXXSmall);
+                font-weight: var(--font-medium);
+              }
+            }
+          }
+
+          .divider {
+            // margin: 15px 19px 18px 19px;
+            background: var(--secondary-medium-extrablur);
+            border: none;
+            &:last-of-type {
+              margin-top: auto;
+              margin-bottom: 0px;
+            }
+          }
+
+          .buttoncontainer {
+            &:last-of-type {
+              margin-top: auto;
+              margin-bottom: 0px;
+            }
+            display: flex;
+            .editButton {
+              width: 47px;
+              height: 32px;
+              min-width: 0px;
+              border-radius: 6px;
+              background: var(--primary-dark);
+              color: var(--white);
+              font-size: var(--XXXXSmall);
+              font-weight: var(--font-medium);
+              margin-left: 19px;
+            }
+            .deleteButton {
+              width: 63px;
+              height: 32px;
+              min-width: 0px;
+              border-radius: 6px;
+              background: var(--denger);
+              color: var(--denger-dark);
+              font-size: var(--XXXXSmall);
+              font-weight: var(--font-medium);
+              margin-left: 9px;
+            }
+          }
+          .title {
+            // margin: 13px 0px 0px 19px;
+            margin-left: 15px;
+            color: var(--thursary-dark);
+            font-size: var(--XSmall);
+            font-weight: var(--font-bold);
+          }
+        }
+      }
+    }
+  }
+}

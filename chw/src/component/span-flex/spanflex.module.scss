@@ -1,0 +1,15 @@
+.spanFlexContainer {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-weight: var(--font-normal);
+        font-size: var(--XXSmall);
+        color: var(--black);
+    }
+    .subTitle {
+        font-weight: var(--font-normal);
+        font-size: var(--XXXXSmall);
+        color: var(--secondary-blur2);
+    }
+}

@@ -1,0 +1,126 @@
+
+.Carousel {
+  overflow: hidden;
+  max-width: 370px;
+
+  .carouselInner {
+    white-space: nowrap;
+    transition: ease 2s;
+  }
+  .carouselItem {
+    display: inline-block;
+    width: 100%;
+  }
+  .img {
+    display: none;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .order {
+      font-weight: var(--font-medium);
+      font-size: var(--medium);
+      color: var(--white);
+    }
+    .established {
+      font-weight: var(--font-medium);
+      font-size: var(--XXSmall);
+      color: var(--white);
+      margin-top: 9px;
+    }
+    .established1 {
+      font-weight: var(--font-medium);
+      font-size: var(--XXSmall);
+      color: var(--white);
+    }
+  }
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 37px;
+    width: 10%;
+    .button {
+      cursor: pointer;
+    }
+    .leftarrow:hover {
+      background: var(--white);
+    }
+  }
+}
+@media only screen and(min-width:768px) {
+  .Carousel {
+    // margin: 0 auto;
+    overflow: hidden;
+    max-width: 390px;
+
+    .carouselInner {
+      white-space: nowrap;
+      transition: ease 2s;
+    }
+
+    .carouselItem {
+      display: inline-block;
+      width: 100%;
+      .img {
+        display: unset;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .order {
+        font-weight: var(--font-medium);
+        font-size: var(--medium);
+        color: var(--white);
+      }
+      .established {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--white);
+        margin-top: 9px;
+      }
+      .established1 {
+        font-weight: var(--font-medium);
+        font-size: var(--XXSmall);
+        color: var(--white);
+      }
+    }
+    .iconContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 37px;
+      width: 13%;
+      .button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+
+        .leftarrow {
+          // width: 20px;
+          // height: 20px;
+        }
+        &:hover {
+          background: var(--primary-medium2);
+          border-radius: 60%;
+        }
+      }
+    }
+  }
+}

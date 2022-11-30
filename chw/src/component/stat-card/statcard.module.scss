@@ -1,0 +1,37 @@
+.statCardContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top:15px;
+    border-radius: 12px;
+    background-color: var(--white);
+    .statCardContainerDetails {
+        padding: 23px 0px;
+        .cardTitle{
+            font-size: var(--XXXLarge) ;
+            font-weight:var(--font-semibold) ;
+            color:var(--black)
+        }
+        .cardSubTitle{
+            max-width:89px;
+            font-size: var(--XXSmall) ;
+            font-weight:var(--font-normal) ;
+            color:var(--thursary-dark)
+            
+
+        }
+    }
+}
+
+@media only screen and(min-width:768px) {
+    .statCardContainer {
+        display: flex;
+        flex-direction: row;
+        border-radius: 12px;
+        background-color: var(--white);
+
+        .statCardContainerDetails {
+            padding: 24px 0px;
+        }
+    }
+
+}

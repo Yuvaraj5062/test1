@@ -1,0 +1,189 @@
+.headerContainer {
+  //overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  align-items: center;
+  padding: 9px 13px;
+  // position: sticky;
+  // top:0; //22px
+  // left:0;
+  // z-index: 10;
+
+  .dropdownItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .dropdownText {
+      font-size: var(--XXXSmall);
+      font-weight: var(--font-medium);
+      margin-right: 10px;
+      margin-left: 5px;
+      // margin-left: 4px;
+    }
+  }
+  .headerLeftMobile {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    .mobileIcon {
+      margin-left: 16px;
+    }
+  }
+
+  .headerRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    .icon {
+      transform: rotate(90deg);
+    }
+    // width: 50%;
+    .dropdownContainer {
+      margin-right: 16px;
+      margin-left: 16px;
+      flex-direction: row;
+      justify-content: space-between;
+      background: var(--white1);
+      display: flex;
+      align-items: center;
+      position: relative;
+      .headerMenu {
+        position: absolute;
+        top: 36px;
+
+        .dropdownListContent {
+          //right: 22%;
+          padding: 0px;
+        }
+      }
+
+      .countryImage {
+        margin-right: 5px;
+      }
+      .dropdownContent {
+        margin-right: 10px;
+        font-size: var(--small);
+        font-weight: var(--font-normal);
+        color: var(--primary);
+      }
+    }
+    .headerIcon {
+      margin-left: 16px;
+    }
+    .headerImage {
+      margin-left: 16px;
+    }
+    .headerUserDetails {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      margin-right: 16px;
+      .userName {
+        font-weight: var(--font-medium);
+        color: var(--secondary-blur);
+        font-size: var(--small);
+      }
+      .userStatus {
+        font-weight: var(--font-normal);
+        color: var(--primary-dark);
+        font-size: var(--XXXXSmall);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .headerContainer {
+    justify-content: unset;
+    border-radius: 12px;
+    top: 0; //22px
+    position: sticky; //use this when fixed header
+    left: 0;
+    z-index: 2;
+    .headerLeft {
+      width: 50%;
+      background-color: var(--blue2);
+      border-radius: 12px;
+      padding: 6px 10px;
+      .headerSearchIcon {
+        padding: 17px;
+      }
+      .headerSearchInput {
+        background-color: var(--blue2);
+        border: none;
+        padding-left: 17px;
+        width: 95%;
+        &::placeholder {
+          color: var(--thursary-dark);
+          font-size: var(--XSmall);
+          font-weight: var(--font-normal);
+          margin: 5px;
+        }
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    .headerRight {
+      justify-content: flex-end;
+      width: 100%;
+      .dropdownContainer {
+        margin-right: 26px;
+        margin-left: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        background: var(--white1);
+        display: flex;
+        align-items: center;
+        .headerMenu {
+          top: 42px;
+          background: var(--white);
+          //width: 100%;
+
+          .dropdownListContent {
+            //right: 22%;
+            border-radius: 10px;
+          }
+        }
+        .countryImage {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+        .dropdownContent {
+          margin-right: 10px;
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+          color: var(--primary);
+        }
+      }
+      .headerIcon {
+        margin-left: 22px;
+      }
+      .headerImage {
+        margin-left: 23px;
+        width: 44px;
+        height: 44px;
+      }
+      .headerUserDetails {
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+        margin-right: 22px;
+        .userName {
+          font-weight: var(--font-medium);
+          color: var(--secondary-blur);
+          font-size: var(--small);
+        }
+        .userStatus {
+          font-weight: var(--font-normal);
+          color: var(--primary-dark);
+          font-size: var(--XXXXSmall);
+        }
+      }
+    }
+  }
+}

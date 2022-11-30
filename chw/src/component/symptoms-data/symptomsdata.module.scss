@@ -1,0 +1,17 @@
+.hypertensionButton {
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 7px 12px;
+  // min-width: 0px;
+  border-radius: 50px;
+  border: none;
+  font-size: var(--XXSmall);
+  font-weight: var(--font-medium);
+  margin: 16px 0px 16px 20px;
+}
+
+@media only screen and(min-width:768px) {
+  .hypertensionButton {
+    margin: 16px 0px 0px 20px;
+  }
+}

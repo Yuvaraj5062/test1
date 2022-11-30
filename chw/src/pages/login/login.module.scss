@@ -1,0 +1,165 @@
+.patientContainer {
+  display: flex;
+  background: var(--blue-light);
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  // width: 103%;
+  .patient {
+    display: flex;
+    border-radius: 47px;
+    position: relative;
+
+    .maindoctor {
+      display: flex;
+      flex-direction: column;
+      // padding: 20px 0px 0px 35px;
+      // justify-content: center;
+      align-items: center;
+
+      .img {
+        display: none;
+      }
+      .logo {
+        margin-top: 41px;
+      }
+
+      .xrayimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .caraouselMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: var(--blue-dark);
+        border-radius: 23px;
+        margin: 25px auto 20px auto;
+
+        .caraouselContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 37px 0px 54px 0px;
+          align-items: center;
+          background: var(--blue-dark);
+          color: var(--white);
+          border-bottom-left-radius: 23px;
+          border-bottom-right-radius: 23px;
+
+          .order {
+            font-weight: var(--font-medium);
+            font-size: var(--medium);
+            color: var(--white);
+          }
+
+          .established {
+            font-weight: var(--font-medium);
+            font-size: var(--XXXSmall);
+            color: var(--white);
+          }
+
+          .established1 {
+            font-weight: var(--font-medium);
+            font-size: var(--XXXSmall);
+            color: var(--white);
+          }
+
+          .caraouselIcon {
+            display: flex;
+            justify-content: space-between;
+            width: 12%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .patientContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: unset; // position: relative;
+    .patient {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      right: 154px;
+      width: 873px;
+      height: 700px;
+
+      // padding: 10px 0px 0px 0px;
+      background: var(--blue-dark);
+
+      // border-radius: 47px;
+      // position: relative;
+      // left: 8%;
+      .maindoctor {
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        padding: 0px 20px 0px 0px;
+        margin-left: 10%;
+
+        // .titlexray {
+        //   color: var(--white1);
+        //   font-weight: var(--font-bold);
+        //   font-size: 36px;
+        // }
+        .img {
+          display: unset;
+        }
+
+        .xrayimg {
+          margin-top: 0px;
+        }
+
+        .caraouselMainContainer {
+          display: flex;
+          flex-direction: row;
+          position: unset;
+          border-radius: 0px;
+          margin: 0px 0px 0px 0px;
+
+          .caraouselContainer {
+            padding: 0px 0px 0px 0px;
+            display: flex;
+            margin: 0px 0px 0px 0px;
+
+            .caraouselIcon {
+              // display: flex;
+              // justify-content: space-between;
+              // width: 12%;
+              // padding-top: 20px;
+              // cursor: pointer;
+            }
+
+            .order {
+              font-weight: var(--font-medium);
+              font-size: var(--medium);
+              color: var(--white);
+            }
+
+            .established {
+              font-weight: var(--font-medium);
+              font-size: var(--XXSmall);
+              color: var(--white);
+            }
+
+            .established1 {
+              font-weight: var(--font-medium);
+              font-size: var(--XXSmall);
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
+}

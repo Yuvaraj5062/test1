@@ -1,0 +1,87 @@
+.mobileTableContainer {
+  background: var(--white);
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 20px 0px;
+
+  .mobileTableTopCard {
+    // position: relative;
+    margin: 0px 20px 20px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .popup {
+      padding: none;
+      position: absolute;
+      z-index: 1;
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-normal);
+      color: var(--thursary-dark);
+      background-color: var(--white);
+      cursor: pointer;
+      // height: 143px;
+      width: 210px;
+      border-radius: 12px;
+      border: 1px solid var(--secondary-medium-blur);
+      //   padding-left: 15px;
+      box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.05);
+      top: 55px;
+      right: 0px;
+      .popupContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 12px 10px 12px 22px;
+
+        .popupIcon {
+          margin-right: 12px;
+        }
+      }
+    }
+    .mobileTableTopCardLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .img {
+        height: 42px;
+        width: 42px;
+        border-radius: 50%;
+      }
+      .nameContainer {
+        margin-left: 10px;
+        .nameContainerHeading {
+          color: var(--black);
+          font-weight: var(--font-semibold);
+          font-size: var(--XSmall);
+        }
+        .nameContainerSubHeading {
+          color: var(--secondary-blur2);
+          font-weight: var(--font-normal);
+          font-size: var(--XXXXSmall);
+        }
+      }
+    }
+  }
+
+  .mobileTableBottonCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
+    color: var(--secondary-blur2);
+    font-weight: var(--font-normal);
+    font-size: var(--XXXXSmall);
+    .mobileTableBottonCardChild {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 12px;
+      font-weight: var(--font-normal);
+      .iconClass {
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+//white-space: nowrap; and overflow:auto table container
+.tableContainer {
+  width: 95%;
+  margin-left: 10px;
+  // margin-right: 10px;
+  // max-height: 300px;
+  overflow: auto;
+
+  .table {
+    width: 100%;
+
+    .tableHead {
+      //  background: var(--thursary-dark);
+      white-space: nowrap;
+      height: 30px;
+      color: var(--thursary-dark);
+      font-size: var(--XXSmall);
+      font-weight: var(--font-semibold);
+      text-align: left;
+      padding: 0px 10px;
+
+      .popupParent {
+        position: relative;
+
+        .icon {
+          margin-left: 6px;
+          cursor: pointer;
+        }
+
+        .icon1 {
+          transform: rotate(270deg);
+          margin-left: 6px;
+          cursor: pointer;
+        }
+
+        .popup {
+          // padding: none;
+          position: absolute;
+          font-size: var(--XXXXSmall);
+          font-weight: var(--font-normal);
+          color: var(--thursary-dark);
+          background-color: var(--white);
+          cursor: pointer;
+          height: 80px;
+          width: 128px;
+          border-radius: 8px;
+          border: 1px solid var(--secondary-medium-blur);
+          padding-left: 15px;
+          box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+
+    .tableRow {
+      height: 30px;
+      font-size: var(--XXXXSmall);
+      font-weight: var(--font-normal);
+      color: var(--secondary-blur2);
+      cursor: pointer;
+
+      .tableRowData {
+        white-space: nowrap;
+        padding: 5px 10px;
+
+        .image {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+
+        .playIcon {
+          margin-right: 10px;
+        }
+
+        .pdfIcon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tableContainer {
+    width: 98%;
+    // margin-left: 5px;
+    max-height: 350px;
+    overflow: auto;
+
+    //margin-right: 10px;
+    .table {
+      width: 100%;
+
+      .tableHead {
+        //  background: var(--thursary-dark);
+        height: 30px;
+        color: var(--thursary-dark);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        text-align: left;
+        padding: 0px 3px;
+
+        .popupParent {
+          position: relative;
+
+          .icon {
+            margin-left: 6px;
+            cursor: pointer;
+          }
+
+          .icon1 {
+            transform: rotate(270deg);
+            margin-left: 6px;
+            cursor: pointer;
+          }
+
+          .popup {
+            // padding: none;
+            position: absolute;
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-normal);
+            color: var(--thursary-dark);
+            background-color: var(--white);
+            cursor: pointer;
+            height: 80px;
+            width: 128px;
+            border-radius: 8px;
+            border: 1px solid var(--secondary-medium-blur);
+            padding-left: 15px;
+            box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.05);
+          }
+        }
+      }
+
+      .tableRow {
+        height: 40px;
+        font-size: var(--XXXXSmall);
+        font-weight: var(--font-normal);
+        color: var(--secondary-blur2);
+        cursor: pointer;
+
+        .tableRowData {
+          padding: 5px 5px;
+
+          .playIcon {
+            margin-right: 10px;
+          }
+
+          .pdfIcon {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tableContainer {
+    // width: 100%;
+    // margin-left: 10px;
+    // margin-right: 10px;\
+    width: 99%;
+    // margin-left: 5px;
+    max-height: 350px;
+    overflow: auto;
+
+    .table {
+      width: 100%;
+
+      .tableHead {
+        height: 30px;
+        color: var(--thursary-dark);
+        font-size: var(--XXSmall);
+        font-weight: var(--font-semibold);
+        text-align: left;
+        padding: 5px 10px;
+
+        .popupParent {
+          position: relative;
+
+          .icon {
+            margin-left: 6px;
+            cursor: pointer;
+          }
+
+          .icon1 {
+            transform: rotate(270deg);
+            margin-left: 6px;
+            cursor: pointer;
+          }
+
+          .popup {
+            // padding: none;
+            position: absolute;
+            font-size: var(--XXXXSmall);
+            font-weight: var(--font-normal);
+            color: var(--thursary-dark);
+            background-color: var(--white);
+            cursor: pointer;
+            height: 80px;
+            width: 96px;
+            border-radius: 8px;
+            border: 1px solid var(--secondary-medium-blur);
+            padding-left: 15px;
+            box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.05);
+          }
+        }
+      }
+
+      .tableRow {
+        height: 30px;
+        font-size: var(--XXXXSmall);
+        font-weight: var(--font-normal);
+        color: var(--secondary-blur2);
+        cursor: pointer;
+
+        .tableRowData {
+          padding: 5px 10px;
+
+          .playIcon {
+            margin-right: 10px;
+          }
+
+          .pdfIcon {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
